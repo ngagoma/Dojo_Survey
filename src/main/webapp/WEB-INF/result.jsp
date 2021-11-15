@@ -11,16 +11,19 @@
 <body>
 	<div class="container">
 		<form action="/">
+			
+			 	
+			<h2>View Data: ${data}</h2>
 			<h1>Submitted Info</h1>
 			<p><label id="name">Your Name:</label>
-				${userName}"</p>
+				${data[0]}"</p>
 			<p><label id="location">Dojo Location:</label> 
-			${locations}"</p>
+				${data[1]}"</p>
 			<p><label id="language">Favorite Language:</label>
-			 ${programs}"</p>
+			 	${data[2]}"</p>
 			<p>
 			<label id="comment1">Comment(Optional):</label>
-			 ${notes}"</p>
+			 	${data[3]}"</p>
 			
 			<button>Go Back</button>
 		</form>

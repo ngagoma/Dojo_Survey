@@ -1,5 +1,7 @@
 package com.hervais.dojosurvey.controllers;
 
+import java.util.ArrayList;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,10 +21,20 @@ public class MainController {
 						@RequestParam("comment") String note,
 						Model model) {
 		
-		model.addAttribute("userName", firstName);
-		model.addAttribute("locations", loc);
-		model.addAttribute("programs", prog);
-		model.addAttribute("notes", note);
+		ArrayList <String> registration = new ArrayList<String>();
+		
+		registration.add(firstName);
+		registration.add(loc);
+		registration.add(prog);
+		registration.add(note);
+		
+//		model.addAttribute("userName", firstName);
+//		model.addAttribute("locations", loc);
+//		model.addAttribute("programs", prog);
+//		model.addAttribute("notes", note);
+		
+		model.addAttribute("data", registration);
+		System.out.println("data" + model.addAttribute("data", registration));
 		
 		return "result.jsp";
 	}
