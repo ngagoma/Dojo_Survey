@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+.container{
+	border: 1px solid black;
+	margin-top: 5%;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding: 10px;
+}
+
+#name{
+	margin-right: 75px;
+}
+
+#location{
+	width: 200px;
+	margin-right: 55px;
+}
+
+#language{
+	margin-right: 28px;
+}
+
+
+select{
+	width: 40%;
+}
+
+#comment{
+	margin-right: 19px;
+	position: relative;
+	top: -30px;
+}
+
+#comment1{
+	margin-right: 20px;
+}
+
+button{
+	margin-left: 50%;
+}
